@@ -159,7 +159,6 @@
         data-fixed="true"
         data-theme="orange">
     </div>
-    <style>.skin-menu{left:auto;right:10px;}.changeSkin-gear{left:auto;right:5px;}</style>
 <script>
     function secondToDate(second) {
         if (!second) {

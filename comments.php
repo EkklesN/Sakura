@@ -60,12 +60,12 @@
 						'title_reply_to' => '<div class="graybar"><i class="fa fa-comments-o"></i>' . __('Leave a Reply to', 'sakura') . ' %s' . '</div>',
 						'cancel_reply_link' => __('Cancel Reply', 'sakura'),
 						'label_submit' => __('Reply', 'sakura'),
-						'comment_field' => '<p><i class="iconfont icon-markdown"></i> Markdown Supported while <i class="fa fa-code" aria-hidden="true"></i> Forbidden</p><div class="comment-textarea"><textarea placeholder="' . __("You are a surprise that I will only meet once in my life", "sakura") . ' ..." name="comment" class="commentbody" id="comment" rows="5" tabindex="4"></textarea><label class="input-label">' . __("You are a surprise that I will only meet once in my life", "sakura") . ' ...</label></div>
+						'comment_field' => '<p style="font-style:italic"><a href="https://segmentfault.com/markdown" target="_blank"><i class="iconfont icon-markdown" style="color:#000"></i></a> Markdown Supported while <i class="fa fa-code" aria-hidden="true"></i> Forbidden</p><div class="comment-textarea"><textarea placeholder="' . __("You are a surprise that I will only meet once in my life", "sakura") . ' ..." name="comment" class="commentbody" id="comment" rows="5" tabindex="4"></textarea><label class="input-label">' . __("You are a surprise that I will only meet once in my life", "sakura") . ' ...</label></div>
                         <div id="upload-img-show"></div>
                         <!--插入表情面版-->
                         <p id="emotion-toggle" class="no-select">
-                            <span class="emotion-toggle-off">' . __("插入表情", "sakura")/*表情面版*/ . '</span>
-                            <span class="emotion-toggle-on">' . __("收起", "sakura")/*收起*/ . '</span>
+                            <span class="emotion-toggle-off">' . __("Click me OωO", "sakura")/*插入表情*/ . '</span>
+                            <span class="emotion-toggle-on">' . __("Woooooow ヾ(≧∇≦*)ゝ", "sakura")/*收起*/ . '</span>
                         </p>
                         <div class="emotion-box no-select">
                             <table class="motion-switcher-table">
@@ -92,7 +92,7 @@
 							'author' =>
 								'<div class="popup cmt-popup cmt-author" onclick="cmt_showPopup(this)"><span class="popuptext" id="thePopup" style="margin-left: -115px;width: 230px;">' . __("Auto pull nickname and avatar with a QQ num. entered", "sakura")/*输入QQ号将自动拉取昵称和头像*/ . '</span><input type="text" placeholder="' . __("Nickname or QQ number", "sakura") /*昵称或QQ号*/. ' ' . ( $req ?  '(' . __("Name* ", "sakura") . ')' : '') . '" name="author" id="author" value="' . esc_attr($comment_author) . '" size="22" autocomplete="off" tabindex="1" ' . ($req ? "aria-required='true'" : '' ). ' /></div>',
 							'email' =>
-								'<div class="popup cmt-popup" onclick="cmt_showPopup(this)"><span class="popuptext" id="thePopup" style="margin-left: -65px;width: 130px;">' . __("You\' receive notification by email", "sakura")/*你将收到回复通知*/ . '</span><input type="text" placeholder="' . __("email", "sakura") . ' ' . ( $req ? '(' . __("Must* ", "sakura") . ')' : '') . '" name="email" id="email" value="' . esc_attr($comment_author_email) . '" size="22" tabindex="1" autocomplete="off" ' . ($req ? "aria-required='true'" : '' ). ' /></div>',
+								'<div class="popup cmt-popup" onclick="cmt_showPopup(this)"><span class="popuptext" id="thePopup" style="margin-left: -65px;width: 130px;">' . __("You will receive notification by email", "sakura")/*你将收到回复通知*/ . '</span><input type="text" placeholder="' . __("email", "sakura") . ' ' . ( $req ? '(' . __("Must* ", "sakura") . ')' : '') . '" name="email" id="email" value="' . esc_attr($comment_author_email) . '" size="22" tabindex="1" autocomplete="off" ' . ($req ? "aria-required='true'" : '' ). ' /></div>',
 							'url' =>
 								'<div class="popup cmt-popup" onclick="cmt_showPopup(this)"><span class="popuptext" id="thePopup" style="margin-left: -55px;width: 110px;">' . __("Advertisement is forbidden 😀", "sakura")/*禁止小广告😀*/ . '</span><input type="text" placeholder="' . __("Site", "sakura") . '" name="url" id="url" value="' . esc_attr($comment_author_url) . '" size="22" autocomplete="off" tabindex="1" /></div></div>' . $robot_comments . $private_ms . $mail_notify ,
                             'qq' =>
